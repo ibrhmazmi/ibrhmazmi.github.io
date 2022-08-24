@@ -1,0 +1,80 @@
+* {
+    /* font-family: 'League Spartan'; */
+    /* font-family: 'Playfair Display'; */
+    font-family: 'Titillium Web';
+
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* text-transform: uppercase; */
+    /* align-items: center; */
+    align-items: baseline;
+    width: auto;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* section */
+section {
+    /* text-align: center; */
+    background-color: white;
+    /* padding: 1rem; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: none;
+    border-radius: 1rem;
+    background: rgba(61, 104, 247, 0.61);
+    color: rgb(255, 255, 255);
+}
+
+small {
+    font-size: 12px;
+    color: rgb(248, 59, 1);
+}
+
+p, summary {
+    margin: none;
+    padding: none;
+}
+
+.col figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    /* height: ; */
+}
+
+@media screen and (max-width: 425px) {
+    .row{
+    flex-direction: column;
+    }
+   
+}

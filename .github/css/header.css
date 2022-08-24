@@ -1,0 +1,137 @@
+/* header */
+nav {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 0 0 -50px 0;
+    color: white;
+    font-stretch: expanded;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+.active{
+    border-bottom: 1px solid deepskyblue;
+}
+
+.navbar {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    /* color: white; */
+    text-shadow: 5px 4px 6px rgba(58, 61, 17, 0.81);
+    margin-right: 1rem;
+
+}
+
+.navbar a:hover {
+    color: green;
+    font-size: 2rem;
+}
+
+.Name {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-shadow: 5px 4px 6px rgba(194, 223, 142, 0.81);
+    /* color: white; */
+    text-shadow: white;
+    letter-spacing: 1rem;
+
+}
+
+.btn-nav {
+    display: none;
+}
+
+#btn-nav {
+    display: none;
+    margin: 0;
+}
+
+/* .Name:hover {
+    filter: invert();
+} */
+
+ul, li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-right: 1rem;
+    /* color: white; */
+}
+li a{
+    color: white;
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        font-size: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: -30px 1px -100px 1px;
+        justify-content: flex-start;
+        filter: invert();
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .right a {
+        color: white;
+    }
+
+    .Name {
+        display: none;
+    }
+
+    .btn-nav {
+        display: block;
+        margin-right: 1rem;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    ul {
+        position: fixed;
+        margin: 6rem 0 0 6rem;
+        display: inline;
+        right: -100%;
+        opacity: 70%;
+        flex-direction: column;
+        background-color: rgba(7, 7, 14, 0.993);
+
+        transition: .5s;
+    }
+
+    nav ul li a {
+        color: white;
+        z-index: 2;
+        position: absolute;
+    }
+
+    li {
+        margin-top: 1rem;
+        color: white;
+    }
+
+    li a:hover {
+        color: red;
+    }
+
+    #btn-nav:checked~ul {
+        left: 0;
+
+    }
+}
