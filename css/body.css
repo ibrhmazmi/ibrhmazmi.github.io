@@ -1,0 +1,17 @@
+/* body */
+
+body {
+    height: auto;
+    /* background-color:white ; */
+    background: rgb(207, 207, 127);
+    background: linear-gradient(0deg, rgba(207, 207, 127, 1) 0%, rgba(255, 255, 216, 1) 95%);
+    margin: 0;
+    color: black;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
